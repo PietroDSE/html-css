@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+div{
+    background-color: #44B375;
+    color: red;
+    font-family: 'Courier New', Courier, serif;
+    text-align: center;
+    height: 55px;
+    width: 55px;
+}
+div:hover{
+    background-color: goldenrod;
+}
+div > p{
+    display:none ;
+    
+}
+div:hover > p{
+    display: block;
+    color: white;
+    background-color: red;
+    height: 50px;
+    width: 90px;
+}
+div:hover{
+    background-color: #44B375;
+}

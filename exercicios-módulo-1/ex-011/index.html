@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midias em HTML5</title>
+</head>
+<body>
+   <H1>imagens dinamicas</H1>
+
+   <picture>
+    <source media="(max-width: 750px)" srcset="imgs/img-P.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="imgs/img-M.png" type="image/png">
+<img src="imgs/img-G.png" alt="imagem flexivel">
+
+   </picture>
+
+
+   <h1>audios</h1>
+   <p>reproduzindo audios em html 5</p>
+ <audio preload="metadata" autoplay controls loop>
+<source src="midia/caneta-azul-refrao.mp3" type="audio/mpeg">
+<p>infelizmente seu navegador não baixa audios, <a href="https://www.myinstants.com/en/instant/caneta-azul-refrao-75539/?utm_source=copy&utm_medium=share">clique aqui</a> para ouvir o audio</p>
+ </audio>
+</body>
+</html>

@@ -1,0 +1,30 @@
+@charset "UTF-8";
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:visited{
+    color: darkblue;
+}
+a:hover{
+     color: black;
+     text-decoration: underline;
+}
+a:active{
+    color: yellow;
+}
+.especial::after{
+    content: '← ';
+    text-decoration: none;
+    font-weight: normal;
+    color: blue;
+}
+.especial::before{
+    text-decoration: none;
+    font-weight: normal;
+    color: blue;
+}
