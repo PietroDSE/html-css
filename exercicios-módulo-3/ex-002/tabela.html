@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+
+        table{
+            border-collapse: collapse;
+            width: 500px;
+            margin: auto;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: gray;
+            
+        }
+        th{
+           background-color: blue;
+           
+            
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 7px;
+            
+        }
+        .num{
+            background-color: red;
+            text-align: right;
+        }
+        tfoot{
+            background-color: blue;
+            text-align: center;
+            
+        }
+       td#num1{
+        background-color: blue;
+        text-align: right;
+       }
+    </style>
+</head>
+<body>
+
+    <!--hierarquia de tabelas grandes
+        table
+            CAPTION
+            thead
+                tr
+                td
+                th 
+            tbody
+                tr
+                td
+                th 
+            tfoot
+                tr
+                td
+                th 
+             !-->
+
+             <table>
+                <caption>população de cada estado do Brasil</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">estado</th>
+                        <th scope="col">população</th>
+                    </tr>
+                </thead>
+        
+                <tbody>
+                    <td>São Paulo
+                     <td class="num" style="width: 50px;">44 396 484
+                     <tr>
+                        <td>Minas Gerais
+                        <td class="num">20 869 101
+                     
+                     <tr>
+                        <td>Rio de Janeiro
+                        <td class="num">16 550 024
+                     
+                     <tr>
+                        <td>Bahia
+                        <td class="num">15 203 934
+                     
+                     <tr>
+                        <td>Rio Grande do Sul
+                        <td class="num">11 247 972
+                     
+                     <tr>
+                        <td>Paraná
+                        <td class="num">11 163 018
+                     
+                     <tr>
+                        <td>Pernanbuco
+                        <td class="num">9 345 173
+                     
+                     <tr>
+                        <td>Ceará
+                        <td class="num">8 904 459
+                     
+                     <tr>
+                        <td>Pará
+                        <td class="num">8 175 113
+                     
+                     <tr>
+                        <td>Maranhão
+                        <td class="num">6 904 241
+                     
+                     <tr>
+                        <td>Santa Catarina
+                        <td class="num">6 819 190
+                     
+                     <tr>
+                        <td>Goiás
+                        <td class="num">6 610 681
+                     
+                     <tr>
+                        <td>Paraíba
+                        <td class="num">3 972 202
+                     
+                     <tr>
+                        <td>Amazonas
+                        <td class="num">3 938 336
+                     
+                     <tr>
+                        <td>Espírito Santo
+                        <td class="num">3 929 911
+                     
+                     <tr>
+                        <td>Rio Grande do Norte
+                        <td class="num">3 442 175
+                     
+                     <tr>
+                        <td>Alagoas
+                        <td class="num">3 340 932
+                     
+                     <tr>
+                        <td>Mato Grosso
+                        <td class="num">3 270 973
+                     
+                     <tr>
+                        <td>Piauí
+                        <td class="num">3 204 028
+                     
+                     <tr>
+                        <td>Distrito Federal
+                        <td class="num">2 914 830
+                     
+                     <tr>
+                        <td>Mato Grosso do Sul
+                        <td class="num">2 651 235
+                     
+                     <tr>
+                        <td>Sergipe
+                        <td class="num">2 242 937
+                     
+                     <tr>
+                        <td>Rondônia
+                        <td class="num">1 768 204
+                     
+                     <tr>
+                        <td>Tocantins
+                        <td class="num">1 515 126
+                     
+                     <tr>
+                        <td>Acre
+                        <td class="num">803 513
+                     
+                     <tr>
+                        <td>Amapá
+                        <td class="num">766 679
+                     
+                     <tr>
+                        <td>Roraima
+                        <td class="num">505 665
+                     
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row"><strong>total de habitantes</strong>
+                        <td id="num1"> 207.750.291
+                    </tr>
+                </tfoot>
+             </table>
+</body>
+</html>
