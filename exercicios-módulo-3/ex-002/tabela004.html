@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agrupamento de colgroups</title>
+    <style>
+        table{
+            margin: auto;
+            width: 500px;
+            border-collapse:collapse ;
+            border: 1px solid black;
+        }
+        caption{
+            background-color: gray;
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        .nome{
+            background-color: gold;
+        }
+        .grupo{
+            background-color: lime;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="nome"> 
+            <col class="grupo" span="2"> 
+            <col class="idade"> 
+            <col class="profissão"> 
+        
+        
+        </colgroup>
+        <caption>cadastro</caption>
+        <tr>
+            <th scope="col">nome</th>
+            <th scope="col">sexo</th>
+            <th scope="col">idade</th>
+            <th scope="col">profissão</th>
+        </tr>
+        <tr>
+            <td>ana maria</td>
+            <td>F</td>
+            <td>35</td>
+            <td>jornalista</td>
+        </tr>
+        <tr>
+            <td>Fátima Bernardes</td>
+            <td>F</td>
+            <td>39</td>
+            <td>apresentadora</td>
+        </tr>
+        <tr>
+            <td>Pelé</td>
+            <td>M</td>
+            <td>46</td>
+            <td>atleta</td>
+        </tr>
+        <tr>
+            <td>gustavo guanabara</td>
+            <td>M</td>
+            <td>48</td>
+            <td>programador</td>
+        </tr>
+        <tr>
+            <td>Alfredo</td>
+            <td>M</td>
+            <td>40</td>
+            <td>assistente</td>
+        </tr>
+    </table>
+</body>
+</html>
