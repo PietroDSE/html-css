@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body> 
+    <h1>teste de formulario</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>sexo</legend>
+            <input type="radio" name="sexo" id="imasc" value="M"> <label for="imasc">masculino</label> <br>
+            <input type="radio" name="sexo" id="ifemi" value="F"> <label for="ifemi">feminino</label>
+            </fieldset>
+        <fieldset>
+            <legend>esportes favoritos</legend>
+            <input type="checkbox" name="esfuts" id="iesfuts" checked value="futsal"> <label for="iesfuts">futsal</label>
+            <input type="checkbox" name="esfut" id="iesfut" value="futebol" checked><label for="iesfut" >Futebol</label> <br>
+            <input type="checkbox" name="esvol" id="iesvol" checked value="volei"> <label for="iesvol">volei</label>
+            <input type="checkbox" name="eshand" id="ieshand" value="handebol"> <label for="ieshand">handbol</label> <br>
+            <input type="checkbox" name="esten" id="iesten" value="tenis"> <label for="iesten">tenis</label>
+            <input type="checkbox" name="esbask" id="iesbask" value="basquete"> <label for="iesbask">basquete</label> <br>
+            <input type="checkbox" name="essin" id="iessin" value="sinuca"> <label for="iessin">sinuca</label>
+            <input type="checkbox" name="espin" id="iespin" value="pinbolim"> <label for="iespin">pinbolim</label> <br>
+        </fieldset>
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="resetar">
+        </p>
+    </form>
+</body>
+</html>
