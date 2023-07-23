@@ -4,16 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
-    <div id="espaço">
-    
-            <h1>login</h1>
-            <p>seja bem-vindo(a)novamente. faça login para acessar sua conta e fazer configurações no ambiente</p><br>
-            <label for="imail">email</label>
-            <input type="email" name="email" id="imail" required autocomplete="email">
-</div>
+    <main>
+        <section id="login">
+            <div id="form">
+                <form action="cadastro.js" method="post">
+                    
+                    <div id="img">
+                        <!--imagem css-->
+                    </div>
+                            <h1>login</h1>
+                            <p>seja bem-vindo(a)novamente. faça login para acessar sua conta e fazer configurações no ambiente
+                                <br>
+                            <label for="imail"></label>
+                            <input type="email" name="email" id="imail" required autocomplete="email" placeholder="e-mail">
+                            <br>
+                            <label for="isenha"></label>
+                            <input type="password" name="senha" id="isenha" placeholder="senha" required autocomplete="email">
+                            </p><br>
+                </form>
+            </div>
+
+        </section>
+    </main>
 
 </body>
 </html>
