@@ -1,0 +1,33 @@
+/* Todas as mídias e breakpoits aqui... */
+
+/* Quando a largura da tela está entre 768px e 992px */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    section#login {
+        width: 80vw;
+    }
+    section#login > div#img {
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+    section#login > div#form {
+        float: left;
+        width: 70%;
+    }
+}
+
+/* Quando a largura da tela é igual ou maior que 992px */
+@media screen and (min-width: 992px) {
+    section#login {
+        width: 950px;
+    }
+    section#login > div#img {
+        float: left; /* Adicionado 'float: left;' para alinhar à esquerda */
+        width: 50%;
+        height: 100%;
+    }
+    section#login > div#form {
+        float: left; /* Alterado de 'float: right' para 'float: left' para alinhar à esquerda */
+        width: 50%;
+    }
+}
