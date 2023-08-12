@@ -1,38 +1,42 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+
 :root{
-  --preto: #000000;
-  --amarelo: #FFB62B;
-  --cinza: #A8B1B8;
-  --azul: #00275E;
-  --azul2: #6F97AE;
-  --branco: #ffffff;
-  
+    --roxo: #6001d2;
+    --preto: #000000;
+
 }
 *{
-  margin-top: 0;
+  margin: 0;
   padding: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'raleway', sans-serif;
   
 }
 body{
   margin: auto;
-  background-color: var(--cinza);
 }
 header{
-   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-   background-image: linear-gradient(var(--azul), var(--azul2));
+   font-family: 'Arial Narrow', Arial, sans-serif; 
    
 }
+div#moon{
+  width: 20px;
+  height: 20px;
+  background-color: black;
+}
+#dark_mode{
+  width: 20px;
+
+
+}
 h1{
-    font-family:'Caprasimo', cursive;
+    font-family: sans-serif;
     text-align: center;
 }
 .center{
-  text-align: center;
+    text-align: center;
 }
 nav{
-  background-color: var(--azul2);
   padding: 10px;
   border-radius: 5px;  
 }
@@ -51,6 +55,9 @@ p > a{
   color: #1C25E6;
   text-decoration: none;
   
+}
+p {
+  padding-bottom: 20px;
 }
 
 footer{
