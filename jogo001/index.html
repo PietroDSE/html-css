@@ -4,33 +4,46 @@
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Título da página</title> 
+    <meta name="description" content="Tudo o que você precisa saber sobre tecnologia"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/mediaquery.css">
  </head>
- <body> 
+ <body id="c"> 
   <header> 
-    <div> <i id="dark_mode" class="fa-solid fa-moon"></i>
+    <div><i id="dark_mode" class="fa-solid fa-moon"></i>
     </div>
-   <h1 class='center'>Curiosidades da tecnologia</h1> 
-   <p class='center'>Tudo o que você precisa saber sobre tecnologia</p> 
-   <nav> <a href="#">Home</a> <a href="#">Mais</a> <a href="#">Curiosidades</a> <a href="#">Fale Conosco</a> 
+   <h1 id="h1" class='center'>O Primeiro jogo</h1> 
+   <nav> 
+    <ul>
+      <li><a class="link_li" class="link" href="#">Home</a></li>
+      <li><a class="link_li" class="link" href="#">Mais</a></li>
+      <li><a class="link_li" class="link" href="#">Curiosidades</a></li>
+      <li><a class="link_li" class="link" href="#">Fale Conosco</a></li>
+    </ul>
    </nav> 
   </header> 
-  <main> 
-   <article> 
-    
-
-    <p>Se você não viveu em uma caverna pelos últimos 15 anos, sabe que hoje em dia, uma das mais lucrativas e populares indústrias no mundo inteiro é a indústria dos games. Mas você sabe qual é o jogo que de certa forma iniciou essa febre mundial hoje em dia?. Se não sabe, hoje é seu dia de sorte, acompanhe o artigo e descubra qual foi o jogo mais antigo já criado</p> 
-    <p>Em 1958 <a href="https://pt.m.wikipedia.org/wiki/William_Higinbotham">William Higinbotham</a> criou o primeiro jogo em um <a href="https://pt.m.wikipedia.org/wiki/Oscilosc%C3%B3pio">osciloscópio</a> o nome do jogo era <a href="https://pt.m.wikipedia.org/wiki/Tennis_for_Two">Tennis For Two</a> pelo nome você pode imaginar que é um jogo de tênis de mesa, parabéns, se você pensou isso você acertou. o jogo era jogado em um osciloscópio modificado no qual os jogadores usavam botões para controlar a bola, óbviamente o jogo tinha gráficos primitivos, mas para a época era um The Last Of Us atualmente,
-    </p> 
-    <p>o jogo foi lançado em 1958 porém só se popularizou em 1962 quando William montou uma versão para um festival científico da época, no <a href="https://www.bnl.gov/world/">Brookhaven National Laboratory</a> NY, o jogo teve sucesso imediato pela inovação para a época e acabou se tornando o pioneiro dos jogos <a href="https://pt.m.wikipedia.org/wiki/Arcade">arcade</a> q se popurizaram em 1970</p> 
-    <p>O jogo não foi um sucesso comercial porém abriu caminho para jogos modernos, desde então, a indústria dos jogos cresceu, tornando-se uma das mais rentáveis do planeta com milhões ou até bilhões de vendas espalhadas em toda terra</p> 
-    <p>embora os jogos hoje sejam muito mais avançados do que o Tennis for Two, é necessário reconhecer sua importância no cenário atual dos games como pioneiro e sem ele, talvez os jogos nunca tivessem sido criados  </p>
-   </article> 
-  </main> 
-  <footer> 
-   <h4>obrigado por acompanhar até aqui</h4> 
-   <p>visite meu <a href="https://github.com/PietroDSE">github</a> para mais</p> 
+    <picture>
+    <img src="imagens/foto_p.png" alt="Imagem de um osciloscópio">
+    </picture>
+    <main id="main">
+<div class="container">
+  
+    <article id="article">
+     <p>Se você não viveu em uma caverna pelos últimos 15 anos, sabe que hoje em dia, uma das mais lucrativas e populares indústrias no mundo inteiro é a indústria dos games. Mas você sabe qual é o jogo que de certa forma iniciou essa febre mundial hoje em dia?. Se não sabe, hoje você vai descobrir! acompanhe o artigo e descubra qual foi o jogo mais antigo já criado</p>
+     <p>Em 1958 <a class="link" href="https://pt.m.wikipedia.org/wiki/William_Higinbotham">William Higinbotham</a> criou o primeiro jogo em um <a class="link" href="https://pt.m.wikipedia.org/wiki/Oscilosc%C3%B3pio">osciloscópio</a> o nome do jogo era <a class="link" href="https://pt.m.wikipedia.org/wiki/Tennis_for_Two">Tennis For Two</a> pelo nome você pode imaginar que é um jogo de tênis de mesa, parabéns, se você pensou nisso você acertou. o jogo era jogado em um osciloscópio modificado no qual os jogadores usavam botões para controlar a bola, óbviamente o jogo tinha gráficos primitivos, mas para a época era uma novidade gigantesca
+     </p>
+     <p>o jogo foi lançado em 1958 porém só se popularizou em 1962 quando William montou uma versão para um festival científico da época, no <a class="link" href="https://www.bnl.gov/world/">Brookhaven National Laboratory</a> NY, o jogo teve sucesso imediato pela inovação para a época e acabou se tornando o pioneiro dos jogos <a class="link" href="https://pt.m.wikipedia.org/wiki/Arcade">arcade</a> que se popurizaram em 1970</p>
+     <p>O jogo não foi um sucesso comercial porém abriu caminho para jogos modernos, desde então, a indústria dos jogos cresceu, tornando-se uma das mais rentáveis do planeta com milhões ou até bilhões de vendas espalhadas em toda terra</p>
+     <p>embora os jogos hoje sejam muito mais avançados do que o Tennis for Two, é necessário reconhecer sua importância no cenário atual dos games como pioneiro e sem ele, talvez os jogos nunca tivessem sido criados  </p>
+    </article>
+  
+</div>
+    </main>
+  <footer id="footer"> 
+   <h4 class="f_text">obrigado por acompanhar até aqui</h4> 
+   <p id="f_text">feito por:<a id="f_link" href="https://github.com/PietroDSE"> Pietro D'avila</a></p> 
   </footer> 
+  <script src="assets/script.js"></script>
  </body>
 </html>
