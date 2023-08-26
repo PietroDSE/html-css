@@ -5,8 +5,9 @@ let res = document.querySelector('div#r');
 let btn = document.querySelector('input#btn')
 function AddTask() {
     const NewTask = text.value.trim();
-
-    if (NewTask === '') {
+    if(text.value.length > 25){
+        alert('Certifique-se de digitar uma tarefa com menos de 20 caractéres')
+    } else if(NewTask === '') {
         alert('digite um item e tente novamente')
     } else if (list.includes(NewTask)) {
         alert('o item está presente na lista')
