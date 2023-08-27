@@ -98,3 +98,14 @@ p#alert{
     margin-top: 20px;
     margin-bottom: 10px;
 }
+
+@media screen and(min-width: 470px) {
+    /* Estilos para dispositivos móveis mais estreitos */
+    div#card {
+        max-width: 100vw;
+        padding: 20px; 
+    }
+    input#search{
+        width: 50vw;
+    }
+}
