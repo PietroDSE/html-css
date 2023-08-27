@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <div id="card">
+        <div id="search">
+            <input type="text" name="txt" id="itxt" placeholder="Search City" spellcheck="false">
+            <button><i class="fa-solid fa-magnifying-glass" id="search_btn"></i></button>
+        </div>
+        <div id="weather"><img src="" id="weather-img">
+        <h1 id="temp">22°C</h1>
+        <h2 id="city">São Paulo</h2>
+        <div id="details">
+            <div class="col">
+            <img src="weather-app-img/images/humidity.png">
+            <div class="col-text">
+                
+                <p id="humidity">50%</p>
+                <p>humidity</p>
+            </div>
+            </div>
+            <div class="col">
+            <img src="weather-app-img/images/wind.png">
+            <div class="col-text">
+                
+                <p id="wind">15 Km/H</p>
+                <p>Wind Speed</p>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p id="alert">the greater the coverage of a country, the more accurate the results will be</p>
+        <p>feito por: Pietro d'avila</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
