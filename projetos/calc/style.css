@@ -1,0 +1,52 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+div#container{
+    width: 100%;
+    height: 100vh;
+    background-color: #e3f9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div#calc{
+    background-color: #3a4452;
+    padding: 20px;
+    border-radius: 10px;
+}
+div#display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+div#display input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+
+}
+input#equal{
+    width: 140px;
+}
+.ope{
+    color: #33ffd8;
+
+}

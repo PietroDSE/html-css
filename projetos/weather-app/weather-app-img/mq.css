@@ -1,0 +1,9 @@
+@media screen and(min-width: 470px) {
+    div#card {
+        max-width: 100vw;
+        padding: 20px; 
+    }
+    input#search{
+        width: 50vw;
+    }
+}

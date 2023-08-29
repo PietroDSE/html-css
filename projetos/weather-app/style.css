@@ -100,7 +100,6 @@ p#alert{
 }
 
 @media screen and(min-width: 470px) {
-    /* Estilos para dispositivos móveis mais estreitos */
     div#card {
         max-width: 100vw;
         padding: 20px; 
