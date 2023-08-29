@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>E-commerce</h1>
+        <section id="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </section>
+    </header>
+    <main>
+        <section id="products">
+            <section id="produtos-sem-kit">
+                <h2>Produtos avulsos</h2>
+                <div class="product">
+                    <img src="imgs/product-1.jpg">
+                    <p>R$135,00</p>
+                    <button onclick="addToCart(1)">Adicionar ao carrinho</button><br>
+                    <button onclick="viewDetails(1)">Descrição do produto</button>
+                </div>
+                <div class="product">
+                    <img src="imgs/product-2.jpg" alt="">
+                    <p>R$140,00</p>
+                    <button onclick="addToCart(2)">Adicionar ao carrinho</button><br>
+                    <button onclick="viewDetails(2)">Descrição do produto</button>
+                </div>
+            </section>
+            <section id="kit-espiral">
+        <div class="product" id="espiral">
+                <img id="kit-espiral" src="imgs/product-3.jpg">
+                <p>R$135,00</p>
+                <button onclick="addToCart(1)">Adicionar ao carrinho</button><br>
+                <button onclick="viewDetails(1)">Descrição do produto</button>
+                <button onclick="changeKitImg()">Altera Imagem</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

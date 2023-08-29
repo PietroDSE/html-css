@@ -1,0 +1,36 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+main{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+#produtos-sem-kit{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.product{
+    border: 1px solid #ddd;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+div#products h2{
+    margin: 0;
+}
+img{
+    border-radius: 7px;
+    width: 150px;
+}
