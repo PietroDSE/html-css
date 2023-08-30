@@ -11,37 +11,185 @@
 
 <body>
     <header>
-        <h1>E-commerce</h1>
-        <section id="cart">
-            <i class="fa-solid fa-cart-shopping"></i>
-        </section>
+        <h1>D&L Aromas</h1>
+        
     </header>
+    <section id="cart">
+        <i class="fa-solid fa-cart-shopping" style="color: #4258ff;"></i>
+        <div id="cart-count">0</div>
+    </section>
+    <div id="cart-menu">
+    
+    </div>
     <main>
         <section id="products">
+            <h2>Produtos avulsos</h2>
             <section id="produtos-sem-kit">
-                <h2>Produtos avulsos</h2>
-                <div class="product">
-                    <img src="imgs/product-1.jpg">
+                <div class="product">   
+                    <img src="imgs/prod-avulso-1.jpg">
                     <p>R$135,00</p>
                     <button onclick="addToCart(1)">Adicionar ao carrinho</button><br>
                     <button onclick="viewDetails(1)">Descrição do produto</button>
                 </div>
                 <div class="product">
-                    <img src="imgs/product-2.jpg" alt="">
+                    <img src="imgs/prod-avulso-2.jpg" alt="">
                     <p>R$140,00</p>
                     <button onclick="addToCart(2)">Adicionar ao carrinho</button><br>
                     <button onclick="viewDetails(2)">Descrição do produto</button>
                 </div>
+                <div class="product">
+                    <img src="imgs/prod-avulso-3.jpg" alt="">
+                    <p>R$140,00</p>
+                    <button onclick="addToCart(3)">Adicionar ao carrinho</button>
+                    <button onclick="viewDetails(3)">Descrição do produto</button>
+                </div>
+                <div class="product">
+                    <img src="imgs/prod-avulso-4.jpg" alt="">
+                    <p>R$140,00</p>
+                    <button onclick="addToCart(4)">Adicionar ao carrinho</button><br>
+                    <button onclick="viewDetails(4)">Descrição do produto</button>
+                </div>
             </section>
+            <h2>Kit Espiral</h2>
             <section id="kit-espiral">
-        <div class="product" id="espiral">
-                <img id="kit-espiral" src="imgs/product-3.jpg">
-                <p>R$135,00</p>
-                <button onclick="addToCart(1)">Adicionar ao carrinho</button><br>
-                <button onclick="viewDetails(1)">Descrição do produto</button>
-                <button onclick="changeKitImg()">Altera Imagem</button>
+                <div class="product">
+                    <img src="imgs/kit-espiral-1.jpg">
+                    <p>R$135,00</p>
+                    <button onclick="addToCart(5)">Adicionar ao carrinho</button><br>
+                    <button onclick="viewDetails(5)">Descrição do produto</button>
+                </div>
+                <div class="product">
+                    <img src="imgs/kit-espiral-2.jpg" alt="">
+                    <p>R$140,00</p>
+                    <button onclick="addToCart(6)">Adicionar ao carrinho</button>
+                    <button onclick="viewDetails(6)">Descrição do produto</button>
+                </div>
+            </section>
+            <h2>Kit Cristal</h2>
+            <section id="kit-cristal">
+                <div class="product">
+                    <img src="imgs/kit-cristal-1.jpg">
+                    <p>R$135,00</p>
+                    <button onclick="addToCart(7)">Adicionar ao carrinho</button><br>
+                    <button onclick="viewDetails(7)">Descrição do produto</button>
+                </div> 
+            <div class="product">
+                <img src="imgs/kit-cristal-2.jpg" alt="">
+                <p>R$140,00</p>
+                <button onclick="addToCart(8)">Adicionar ao carrinho</button>
+                <button onclick="viewDetails(8)">Descrição do produto</button>
             </div>
+            </section>
+            <h2>Kit Square</h2>
+            <section id="kit-square">
+                <div class="product">
+                    <img src="imgs/kit-square-1.jpg">
+                    <p>R$135,00</p>
+                    <button onclick="addToCart(9)">Adicionar ao carrinho</button><br>
+                    <button onclick="viewDetails(9)">Descrição do produto</button>
+                </div>
+            <div class="product">
+                <img src="imgs/kit-square-2.jpg" alt="">
+                <p>R$140,00</p>
+                <button onclick="addToCart(10)">Adicionar ao carrinho</button>
+                <button onclick="viewDetails(10)">Descrição do produto</button>
+            </div>
+            </section>
+            <h2>Kit Hexagono</h2>
+            <section id="kit-hexagono">
+                <div class="product">
+                    <img src="imgs/kit-hexa-1.jpg">
+                    <p>R$135,00</p>
+                    <button onclick="addToCart(11)">Adicionar ao carrinho</button><br>
+                    <button onclick="viewDetails(11)">Descrição do produto</button>
+                </div>
+            <div class="product">
+                <img src="imgs/kit-hexa-2.jpg" alt="">
+                <p>R$140,00</p>
+                <button onclick="addToCart(12)">Adicionar ao carrinho</button>
+                <button onclick="viewDetails(12)">Descrição do produto</button>
+            </div>
+            </section>
+            <h2>Kit Jack</h2>
+            <section id="kit-jack">
+                <div class="product">
+                    <img src="imgs/kit-jack-1.jpg">
+                    <p>R$135,00</p>
+                    <button onclick="addToCart(13)">Adicionar ao carrinho</button><br>
+                    <button onclick="viewDetails(13)">Descrição do produto</button>
+                </div>
+            <div class="product">
+                <img src="imgs/kit-jack-2.jpg" alt="">
+                <p>R$140,00</p>
+                <button onclick="addToCart(14)">Adicionar ao carrinho</button>
+                <button onclick="viewDetails(14)">Descrição do produto</button>
+            </div>
+            <div class="product">
+                <img src="imgs/kit-jack-3.jpg" alt="">
+                <p>R$140,00</p>
+                <button onclick="addToCart(15)">Adicionar ao carrinho</button>
+                <button onclick="viewDetails(15)">descrição do produto</button>
+            </div>
+            </section>    
+            <h2>Kit Harley</h2>
+            <section id="kit-harley">
+                <div class="product">
+                    <img src="imgs/kit-harley-1.jpg">
+                    <p>R$135,00</p>
+                    <button onclick="addToCart(16)">Adicionar ao carrinho</button><br>
+                    <button onclick="viewDetails(16)">Descrição do produto</button>
+                </div>
+            <div class="product">
+                <img src="imgs/kit-harley-2.jpg" alt="">
+                <p>R$140,00</p>
+                <button onclick="addToCart(17)">Adicionar ao carrinho</button>
+                <button onclick="viewDetails(17)">Descrição do produto</button>
+            </div>
+            <div class="product">
+                <img src="imgs/kit-harley-3.jpg" alt="">
+                <p>R$140,00</p>
+                <button onclick="addToCart(18)">Adicionar ao carrinho</button>
+                <button onclick="viewDetails(18)">Descrição do produto</button>
+            </div>
+            <div class="product">
+                <img src="imgs/kit-harley-4.jpg" alt="">
+                <p>R$140,00</p>
+                <button onclick="addToCart(19)">Adicionar ao carrinho</button>
+                <button onclick="viewDetails(19)">Descrição do produto</button>
+            </div>
+            </section>      
+            <h2>Kit Paris</h2>
+            <section id="kit-paris">
+                <div class="product">
+                    <img src="imgs/kit-paris-1.jpg">
+                    <p>R$135,00</p>
+                    <button onclick="addToCart(20)">Adicionar ao carrinho</button><br>
+                    <button onclick="viewDetails(20)">Descrição do produto</button>
+                </div>
+            <div class="product">
+                <img src="imgs/kit-paris-2.jpg" alt="">
+                <p>R$140,00</p>
+                <button onclick="addToCart(21)">Adicionar ao carrinho</button>
+                <button onclick="viewDetails(21)">Descrição do produto</button>
+            </div>
+            </section>
+            <h2>Kit Paris - 2</h2>
+            <section id="kit-paris-2">
+                <div class="product">
+                    <img src="imgs/kit-paris;2-1.jpg">
+                    <p>R$135,00</p>
+                    <button onclick="addToCart(22)">Adicionar ao carrinho</button><br>
+                    <button onclick="viewDetails(22)">Descrição do produto</button>
+                </div>
+            <div class="product">
+                <img src="imgs/kit-paris;2-2.jpg" alt="">
+                <p>R$140,00</p>
+                <button onclick="addToCart(23)">Adicionar ao carrinho</button>
+                <button onclick="viewDetails(23)">Descrição do produto</button>
+            </div>
+            </section>
         </section>
+         
     </main>
     <script src="script.js"></script>
 </body>
