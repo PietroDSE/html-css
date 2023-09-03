@@ -26,7 +26,7 @@ div#display{
 div#display input{
     text-align: right;
     flex: 1;
-    font-size: 45px;
+    font-size: 25px;
     box-shadow: none;
 }
 form input{

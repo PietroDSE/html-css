@@ -1,23 +1,40 @@
 let countCart = 0;
-const cartIcon = document.getElementById('cart');
-const cartMenu = document.getElementById('cart-menu');
-
+const cartIcon = document.querySelector('section#cart');
+const cartMenu = document.querySelector('div#cart-menu');
+const buyButton = document.querySelector('button#comprar')
 
 cartIcon.addEventListener("click", () => {
-    cartMenu.style.display = cartMenu.style.display === 'block' ? 'none' : 'block';
+    if (cartMenu.style.display === 'block') {
+        cartMenu.style.display = 'none';
+        document.body.classList.remove('no-scroll');
+        document.body.style.overflow = 'auto';
+    } else {
+        cartMenu.style.display = 'block';
+        document.body.classList.add('no-scroll');
+        document.body.style.overflow = 'hidden';
+    }
 
-});
-
+    if (countCart === 0) {
+        updateCartmenu(product)
+        cartMenu.insertBefore(buyButton, cartMenu.firstChild)
+    } else {
+        updateCartmenu(product)
+        cartMenu.appendChild(buyButton)
+    }
+})
 function addToCart(productId) {
     const product = getProductDetails(productId);
     if (product) {
         updateCartmenu(product);
         countCart++;
         updateCount();
+
+        cartMenu.appendChild(buyButton)
+
     }
 }
 
-function updateCartmenu(product){
+function updateCartmenu(product) {
     const cartMenuElement = document.querySelector('div#cart-menu');
     addElementToCart(product, cartMenuElement);
 }
@@ -27,12 +44,12 @@ function updateCount() {
     cartCountElement.textContent = countCart;
 }
 
-function addElementToCart(product, cartMenuElement){
+function addElementToCart(product, cartMenuElement) {
     const cartItem = document.createElement('div');
     cartItem.classList.add('cart-menu-item');
 
     const productImg = document.createElement('img');
-    productImg.src = product.imgSrc; // Assuming the "imgSrc" property contains the image URL
+    productImg.src = product.imgSrc; 
     cartItem.appendChild(productImg);
 
     const productName = document.createElement('p');
@@ -48,6 +65,8 @@ function getProductDetails(productId) {
     if (productElement) {
         const productImg = productElement.querySelector('img');
         const productName = productElement.querySelector('p');
+
+
         return {
             imgSrc: productImg.src,
             name: productName.textContent,

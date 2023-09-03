@@ -1,0 +1,36 @@
+@media screen and (max-width: 440px){
+    
+    div#cart-menu{
+        width: 40vw;
+    }
+}
+@media screen and (max-width: 602px){
+    img#logo{
+        right: 80%;
+    }
+    section#cart{
+    width: 45px;
+    height: 45px;
+    right: 25px;
+    }
+    div#cart-count{
+    top: 65%;
+    }
+    i.fa-solid{
+    font-size: 30px;
+    }
+    footer{
+    margin-top: 10px;
+    width: 110vw;
+    font-size: medium;
+}
+    footer p{
+        width: 80vw;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 1017px){
+    img#logo{
+        right: 84%;
+    }
+}
