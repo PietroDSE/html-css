@@ -39,6 +39,32 @@ img#logo:hover{
     border: 1.5px solid #fff;
     transition: 0.5s;
 }
+button#createaccount{
+    height: 35px;
+    width: 135px;
+    position: absolute;
+    right: 1%;
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button#logIn{
+    height: 35px;
+    width: 135px;
+    position: absolute;
+    right: 1%;
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+span#createIcon{
+    margin-left: 10px;
+}
+span#loginIcon{
+    margin-left: 31px;
+}
 nav{
     position: absolute;
     top: 120px;
@@ -129,7 +155,7 @@ section#cart{
     align-items: center;
     justify-content: center;
     position: fixed;
-    top: 170px;
+    top: 155px;
     right: 15px;
     cursor: pointer;
     font-size: 30px;
@@ -165,7 +191,7 @@ div#cart-menu{
     display: none;
     text-align: center;
     position: fixed;
-    top: 220px;
+    top: 155px;
     right: 80px;
     width: 180px;
     background-color: whitesmoke;

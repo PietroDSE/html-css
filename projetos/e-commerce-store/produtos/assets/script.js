@@ -2,6 +2,8 @@ let countCart = 0;
 const cartIcon = document.querySelector('section#cart');
 const cartMenu = document.querySelector('div#cart-menu');
 const buyButton = document.querySelector('button#comprar')
+const logButton = document.querySelector('button#logIn')
+const enterButton = document.querySelector('')
 
 cartIcon.addEventListener("click", () => {
     if (cartMenu.style.display === 'block') {
