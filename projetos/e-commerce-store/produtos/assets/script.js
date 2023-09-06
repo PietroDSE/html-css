@@ -3,8 +3,55 @@ const cartIcon = document.querySelector('section#cart');
 const cartMenu = document.querySelector('div#cart-menu');
 const buyButton = document.querySelector('button#comprar')
 const logButton = document.querySelector('button#logIn')
-const enterButton = document.querySelector('')
+const signbutton = document.querySelector('button#createaccount')
+const createDiv = document.querySelector('form#form')
+const form = document.querySelector('form#form')
+const error = document.querySelector('span#errorBirth')
+const formElement = document.querySelector('.formElement')
+let createFormIsOpen = false
 
+form.addEventListener('submit', function(event){
+    event.preventDefault()
+
+    const name = document.querySelector('input#name')
+    const date = document.querySelector('input#dateN')
+    const mail = document.querySelector('input#email')
+    const pass = document.querySelector('input#pass')
+    
+    const BirthDate = new Date(date)
+    const nowDate = new Date()
+    const age = nowDate.getFullYear() - BirthDate.getFullYear()
+
+    if(age >= 115 || age < 18){
+    console.log('erro')
+    error.innerHTML ='Idade inválida'
+    }else{
+    error.innerHTML =''
+    }
+    if(date === '' || mail === '' || pass === '' || name === ''){
+        alert('preencha os campos')
+    }
+})
+function toggleForm(){
+    if(createFormIsOpen){
+        createDiv.style.display ='none'
+        document.body.style.overflow ='auto'
+    }else{
+        document.body.style.overflow ='hidden'
+        formElement.style.textAlign ='left'
+        formElement.style.display ='flex'
+        formElement.style.flexDirection ='column'
+        formElement.style.alignItems ='center'
+        formElement.style.justifyContent ='center'
+        createDiv.style.display ='block'
+        createDiv.style.position ='fixed'
+        createDiv.style.top ='50%'
+        createDiv.style.right ='50%'
+        createDiv.style.transform ='translate(50%, -50%)'
+    }
+    createFormIsOpen = !createFormIsOpen
+}
+signbutton.addEventListener('click', toggleForm)
 cartIcon.addEventListener("click", () => {
     if (cartMenu.style.display === 'block') {
         cartMenu.style.display = 'none';

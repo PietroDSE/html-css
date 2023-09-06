@@ -1,0 +1,18 @@
+@media screen and(max-width: 371px){
+
+    div#calc{
+        padding: 10px;
+    }
+    div#display input{
+        font-size: 25px;
+    }
+    form input{
+        width: 25px;
+        height: 40px;
+        font-size: 18px;
+        margin: 3px;
+    }
+    input#equal{
+        width: 120px;
+    }
+}
