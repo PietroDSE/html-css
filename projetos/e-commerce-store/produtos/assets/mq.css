@@ -1,9 +1,9 @@
-@media screen and (min-width: 440px){
-    div#cart-menu{
-        width: 40vw;
+@media screen and (min-width: 525px){
+    img#logo{
+        margin-left: 1000px;
     }
 }
-@media screen and (max-width: 602px){
+@media screen and (min-width: 602px){
     img#logo{
         right: 80%;
     }
