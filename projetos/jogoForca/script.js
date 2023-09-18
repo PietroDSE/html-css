@@ -69,6 +69,7 @@ userButton.addEventListener('click', () => {
         alert('insira uma letra válida')
     }
     userInput.value =''
+    userInput.focus()
 })
 updateWord()
 updateAttempts()
